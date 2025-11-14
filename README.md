@@ -56,11 +56,11 @@ Each state is a 9-dimensional vector:
 ----------------------------------------------------------------------------------------
 
 🏆 Reward Function
-| Event             | Reward                       |
-| Eat food	        | +1.0                         |
-| Die               | -1.0                         |
-|Step penalty       | -0.001                       |
-Move closer to food	| +0.01 * (d_before - d_after) |
+| Event               | Reward                       |
+| Eat food	          | +1.0                         |
+| Die                 | -1.0                         |
+| Step penalty        | -0.001                       |
+| Move closer to food	| +0.01 * (d_before - d_after) |
 
 Reward shaping encourages exploration and reduces wandering, while still letting the agent learn strategic behavior.
 
@@ -73,8 +73,8 @@ Train a DQN agent:
 python -m src.rl.train --policy dqn --episodes 3000
 
 This will produce:
--- CSV logs under data/runs/rl_dqn.csv
--- A saved model under data/runs/rl_dqn_dqn.pt
+* CSV logs under data/runs/rl_dqn.csv
+* A saved model under data/runs/rl_dqn_dqn.pt
 
 View episode logs live in the console:
 ep, steps , return , score
@@ -86,13 +86,14 @@ ep, steps , return , score
 📊 Future Improvements
 
 Environment Improvements:
--- Add a “local grid” observation (5×5 or 7×7 vision
--- RL Improvements
--- Double DQN
--- Dueling DQN
--- Policy-gradient agents (PPO, A2C)
--- TensorBoard logging
--- Live performance dashboard
+*   Add a “local grid” observation (5×5 or 7×7 vision)
+*   RL Improvements
+*   Double DQN  D
+*   Dueling DQN
+*   Policy-gradient agents (PPO, A2C)
+*   TensorBoard logging
+*   Live performance dashboard
+
 
 📝 License
 MIT — free to use, modify, and distribute.
