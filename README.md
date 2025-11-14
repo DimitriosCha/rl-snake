@@ -77,9 +77,10 @@ This will produce:
 * A saved model under data/runs/rl_dqn_dqn.pt
 
 View episode logs live in the console:
-ep, steps , return , score
-1 , 210   , -0.520 , 2
-2 , 195   , -0.489 , 1
+
+ep, steps, return, score
+1, 210, -0.520, 2
+2, 195, -0.489, 1
 
 ----------------------------------------------------------------------------------------
 
@@ -100,6 +101,6 @@ MIT — free to use, modify, and distribute.
 
 🤝 Contributing -- Contributions are welcome — especially around:
 
--- improving the agent architecture
--- extending the observation space
--- adding alternative RL algorithms
+* improving the agent architecture
+* extending the observation space
+* adding alternative RL algorithms
