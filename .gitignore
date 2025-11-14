@@ -1,0 +1,16 @@
+
+# Virtual env & caches
+.venv/
+__pycache__/
+*.pyc
+
+# Model artifacts & runs
+models/
+runs/
+checkpoints/
+logs/
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
