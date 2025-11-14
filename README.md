@@ -33,11 +33,13 @@ Each state is a 9-dimensional vector:
 ----------------------------------------------------------------------------------------
 
 🏆 Reward Function
-| Event               | Reward                       |
-| Eat food	          | +1.0                         |
-| Die                 | -1.0                         |
-| Step penalty        | -0.001                       |
-| Move closer to food	| +0.01 * (d_before - d_after) |
+| Event               | Reward                         |
+| ------------------- | ------------------------------ |
+| Eat food            | `+1.0`                         |
+| Die                 | `-1.0`                         |
+| Step penalty        | `-0.001`                       |
+| Move closer to food | `+0.01 * (d_before - d_after)` |
+
 
 Reward shaping encourages exploration and reduces wandering, while still letting the agent learn strategic behavior.
 
