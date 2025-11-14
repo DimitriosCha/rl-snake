@@ -9,31 +9,8 @@ from raw game mechanics → to environment design → to training deep RL agents
 
 ----------------------------------------------------------------------------------------
 
-rl-snake/
-│
-├── assets/                 # images, icons (optional)
-├── data/
-│   └── runs/               # training logs + saved models
-│
-├── models/                 # optional model export directory
-│
-├── src/
-│   ├── snake/              # Pure game logic (no RL)
-│   │   ├── config.py
-│   │   ├── game.py
-│   │   └── main.py         # human playable version
-│   │
-│   └── rl/
-│       ├── env.py          # Gym-like Snake RL environment
-│       ├── train.py        # training & evaluation entrypoint
-│       ├── agents/
-│       │   └── dqn.py      # Deep Q-Network agent
-│       └── policies/
-│           ├── random.py
-│           ├── greedy.py
-│           └── eps_greedy.py
-│
-└── README.md
+<img width="543" height="514" alt="Screenshot 2025-11-13 at 11 15 04 pm" src="https://github.com/user-attachments/assets/59dc0974-21a6-40f6-b57e-463204f85add" />
+
 
 ----------------------------------------------------------------------------------------
 
@@ -76,11 +53,7 @@ This will produce:
 * CSV logs under data/runs/rl_dqn.csv
 * A saved model under data/runs/rl_dqn_dqn.pt
 
-View episode logs live in the console:
 
-ep, steps, return, score
-1, 210, -0.520, 2
-2, 195, -0.489, 1
 
 ----------------------------------------------------------------------------------------
 
